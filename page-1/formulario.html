@@ -21,43 +21,53 @@
         <div class="collapse navbar-collapse" id="menuOpciones">
           <div class="navbar-nav ml-auto">
             <a class="nav-link" href="./index.html">Inicio</a>
-            <a class="nav-link active" href="./alertas.html">Alertas</a>
-            <a class="nav-link" href="./botones.html">Botones</a>
+            <a class="nav-link" href="./alertas.html">Alertas</a>
+            <a class="nav-link active" href="./formulario.html">Formulario</a>
             <a class="nav-link" href="./tarjetas.html">Tarjetas</a>
           </div>
         </div>
       </nav>
-
-      <!--Inicio de sesion-->
+      
+      <!--FORMULARIO-->
       <div class="d-flex justify-content-center">
-        <div class="col-md-5 border p-5 mt-5 ">
-          <h1 class="d-flex justify-content-center ">Inicio sección</h1>
+        <div class="col-md-5 border p-5 mt-4">
         <form>
           <div class="form-group">
-            <label for="emailId">Correo electronico</label>
-            <input  placeholder="Ingresa tu correo electronico" required type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                      
+            <label for="user">Nombre completo</label>
+            <input  required type="text" class="form-control" id="user" aria-describedby="emailHelp">
+            <small id="userlHelp" class="form-text text-muted">Escribe tu nombre completo</small>          
           </div>
-
+          <div class="form-group">
+            <label for="userId">Nombre de identificación</label>
+            <input required type="text" class="form-control" id="userId" aria-describedby="idHelp">
+            <small id="idHelp" class="form-text text-muted">Escribe tu documento de identificación</small>          
+          </div>
+          <div class="form-group">
+            <label for="emailId">Correo electronico</label>
+            <input required type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Escribe la dirección de tu correo electrónico</small>          
+          </div>
           <div class="form-group">
             <label for="passwd">Contraseña</label>
-            <input  placeholder="Ingresa tu contraseña" requiered type="password" class="form-control" id="passwd" aria-describedby="passwdHelp">         
+            <input requiered type="password" class="form-control" id="passwd" aria-describedby="passwdHelp">
+            <small id="passwdHelp" class="form-text text-muted">Escribe tu contraseña</small>          
           </div>
-
           <div class="form-group">
             <label for="passwdConfirm">Confirmar contraseña</label>
-            <input placeholder="confirmar contraseña" requiered type="password" class="form-control" id="userId" aria-describedby="passwConfirmdHelp">         
+            <input  requiered type="password" class="form-control" id="userId" aria-describedby="passwConfirmdHelp">
+            <small id="passwdConfirmHelp" class="form-text text-muted">Confirmar tu contraseña</small>          
           </div>
-          <button type="submit" class="btn btn-danger btn-block">LOGIN</button>
+          <div class="form-group">
+            <label for="passwdConfirm">Confirmar contraseña</label>
+            <input  requiered type="password" class="form-control" id="userId" aria-describedby="passwConfirmdHelp">
+            <small id="passwdConfirmHelp" class="form-text text-muted">Confirmar tu contraseña</small>          
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Registrarme</button>
         </form>
-      </div>    
-
-
-  
-
+      </div>
+    </div>    
 
       
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
